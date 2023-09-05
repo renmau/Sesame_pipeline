@@ -18,3 +18,9 @@ This folder contains the code needed to draw the parameter samples using Latin h
 This folder contains the three example emulators created as a demonstration of the pipeline in [Mauland-Hus et al. 2023](#). 
 
 The Pipeline and Emulators folders contain information files on how to use or access the code and data in the folders.
+
+## Contributors
+
+- Renate Mauland
+- Hans A. Winther
+- Cheng-Zong Ruan
