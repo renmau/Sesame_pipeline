@@ -1,0 +1,24 @@
+output_dir: ./emulators_lin_separatedLHS/
+trainingdata_csvfile_path:   ./trainingdata/train.csv
+validationdata_csvfile_path: ./trainingdata/val.csv
+testdata_csvfile_path:       ./trainingdata/test.csv
+feature_columns:
+- sigma8
+- Omegacdm
+- w0
+- wa
+- log10fofr
+- z
+- log10k
+label_columns:
+- boost
+batch_size:                  64
+nthreads:                    32
+hidden_layers:
+- 16
+- 8
+learning_rate:               5.e-4
+weight_decay:                5.e-6
+activation_function:         'gelu'
+loss_function:               'L1Loss'
+max_epochs:                  1500

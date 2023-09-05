@@ -1,0 +1,24 @@
+# Where to store the output
+output_dir:                  "./emulators/"
+
+# The training, validation and test data (in .csv format)
+trainingdata_csvfile_path:   "./trainingdata/lin_separatedLHS_train.csv"
+validationdata_csvfile_path: "./trainingdata/lin_separatedLHS_val.csv"
+testdata_csvfile_path:       "./trainingdata/lin_separatedLHS_test.csv"
+
+# Define the data in the train/test/val data-sets
+# 1. The columns of the parameters (the first columns in the data)
+feature_columns:             ['sigma8','Omegacdm','w0','wa','log10fofr','z','log10k']
+
+# 2. The results (what we are trying to emulate - the last columns in the data)
+label_columns:               ['boost']
+
+# Architechture and training parameters
+batch_size:                  64
+nthreads:                    32
+hidden_layers:               [64, 32]
+learning_rate:               5.e-4
+weight_decay:                5.e-6
+activation_function:         'gelu'
+loss_function:               'L1Loss'
+max_epochs:                  1500

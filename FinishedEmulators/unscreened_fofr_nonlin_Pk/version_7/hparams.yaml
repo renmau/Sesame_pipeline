@@ -1,0 +1,10 @@
+activation_function: gelu
+dropout: 0.0
+hidden_layers:
+- 16
+- 8
+learning_rate: 0.0005
+loss_function: L1Loss
+n_features: 7
+output_dim: 1
+weight_decay: 5.0e-06
