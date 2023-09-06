@@ -186,7 +186,7 @@ axs[0].set_ylim(0.97,1.63)
 axs[3].set_ylim(0.97,1.63)
 axs[6].set_ylim(0.97,1.63)
 
-axs[7].set_xlabel(r'$k\,\;[h^{-1}\mathrm{Mpc}]$')
+axs[7].set_xlabel(r'$k\,\;[h\,\mathrm{Mpc}^{-1}]$')
 
 axs[2].set_visible(False)
 axs[5].set_visible(False)
