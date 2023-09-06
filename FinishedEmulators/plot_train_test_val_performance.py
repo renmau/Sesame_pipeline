@@ -183,7 +183,7 @@ axs[4].set_ylabel(r'$\displaystyle \mathrm{Difference}$', fontsize=7)
 axs[3].set_ylabel(r"$r(k,z) = P_{f(R)}/P_{\rm GR}$", fontsize=7)
 axs[7].set_ylabel(r'$\displaystyle \mathrm{Difference}$', fontsize=7)
 axs[6].set_ylabel(r"$r(k,z) = P_{f(R)}/P_{\rm GR}$", fontsize=7)
-axs[7].set_xlabel(r'$k\,\;[h^{-1}\mathrm{Mpc}]$')
+axs[7].set_xlabel(r'$k\,\;[h\,\mathrm{Mpc}^{-1}]$')
 
 axs[1].set_ylim(-0.03,0.03)
 axs[4].set_ylim(-0.03,0.03)
