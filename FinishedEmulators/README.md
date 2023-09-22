@@ -1,9 +1,9 @@
 # Completed Emulators
 
 The three emulators created for $f(R)$ gravity which were used as an exmaple in [Mauland-Hus et al. 2023](#) are given in folders:
-- [screened_fofr_nonlin_Pk](FinishedEmulators/screened_fofr_nonlin_Pk/version_3/) non-linear $f(R)$ with screening
+- [screened_fofr_nonlin_Pk](FinishedEmulators/screened_fofr_nonlin_Pk/version_7/) non-linear $f(R)$ with screening
 - [unscreened_fofr_nonlin_Pk](FinishedEmulators/unscreened_fofr_nonlin_Pk/version_4/) non-linear $f(R)$ without screening
-- [unscreened_fofr_lin_Pk](FinishedEmulators/unscreened_fofr_lin_Pk/version_7/) $f(R)$ using linear theory
+- [unscreened_fofr_lin_Pk](FinishedEmulators/unscreened_fofr_lin_Pk/version_3/) $f(R)$ using linear theory
 
 They emulate the boost between $f(R)$ and GR in the case of screened $f(R)$ and non-lin $P(k)$, unscreened $f(R)$ and linear $P(k)$, and unscreened $f(R)$ and non-lin $P(k)$.
 
