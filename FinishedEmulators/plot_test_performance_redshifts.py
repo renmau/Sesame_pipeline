@@ -30,7 +30,7 @@ class PofkBoostEmulator:
 # and set up the boost-function
 #=============================================
 emulator_folder = "unscreened_fofr_lin_Pk/"
-emulator_version = 0
+emulator_version = 3
 pofkboostfunction = PofkBoostEmulator(path = emulator_folder, version = emulator_version)
 
 #=============================================

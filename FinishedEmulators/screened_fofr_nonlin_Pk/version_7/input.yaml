@@ -1,0 +1,25 @@
+activation: gelu
+batch_size: 64
+dropout: 0.0
+feature_columns:
+- sigma8
+- Omegacdm
+- w0
+- wa
+- log10fofr
+- z
+- log10k
+hidden_layers:
+- 32
+- 16
+label_columns:
+- boost
+learning_rate: 0.0005
+loss_function: L1Loss
+max_epochs: 1500
+nthreads: 32
+output_dir: ./emulators/
+testdata_csvfile_path: ./trainingdata/nonlin_fofr_separatedLHS_test.csv
+trainingdata_csvfile_path: ./trainingdata/nonlin_fofr_separatedLHS_train.csv
+validationdata_csvfile_path: ./trainingdata/nonlin_fofr_separatedLHS_val.csv
+weight_decay: 5.0e-06

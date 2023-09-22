@@ -15,16 +15,16 @@ class PofkBoostEmulator:
 #=============================================
 # Paths to emulator(s)
 #=============================================
-lin_emulator_folder = "./unscreened_fofr_lin_Pk"
-lin_emulator_version = 0
+lin_emulator_folder = "./unscreened_fofr_lin_Pk/"
+lin_emulator_version = 3
 lin_emulator_function = PofkBoostEmulator(path = lin_emulator_folder, version = lin_emulator_version)
 
 nl_noscreening_emulator_folder = "./unscreened_fofr_nonlin_Pk/"
-nl_noscreening_emulator_version = 7
+nl_noscreening_emulator_version = 4
 nl_noscreening_emulator_function = PofkBoostEmulator(path = nl_noscreening_emulator_folder, version = nl_noscreening_emulator_version)
 
 nl_screening_emulator_folder = "./screened_fofr_nonlin_Pk/"
-nl_screening_emulator_version = 4
+nl_screening_emulator_version = 7
 nl_screening_emulator_function = PofkBoostEmulator(path = nl_screening_emulator_folder, version = nl_screening_emulator_version)
 
 #=============================================
@@ -40,7 +40,7 @@ z         = 0.0
 #=============================================
 # The k-array we want the results for
 #=============================================
-khMpc_array = np.linspace(1e-2, 1.0, 50)
+khMpc_array = np.linspace(2e-2, 1.0, 50)
 
 #=============================================
 # Parameters to be given to emulator
