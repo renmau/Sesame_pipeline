@@ -8,7 +8,7 @@ The pipeline consists of the following steps that you need to do:
 4. [Run the COLA simulations](#runcola)
 5. [Make the emulator](#makeemulator)
 
-All parameters now follow a f(R) vs. w0waCDM example as in [Mauland-Hus et al. 2023](#).
+All parameters now follow a f(R) vs. w0waCDM example as in [Mauland et al. 2023](https://arxiv.org/abs/2309.13295).
 
 ---------------------------------------------------
 
@@ -62,7 +62,7 @@ Go to the [neural_network_emulator](neural_network_emulator/) folder. This folde
 
 Some general info:
 - With the codes provided in this folder, you can take two different approaches to making all the samples and running all the simulations.
-You can either do the above process three times, creating samples corresponding to an 80-10-10 percent distribution to create training, test, and validation sets where each of the samples are drawn using Latin hypercube sampling. This ensures an even distribution in parameter space for the three samples. In [Mauland-Hus et al. 2023](#), this corresponded to making one training sample draw with 440 samples, one testing sample draw with 55 samples, and one validation sample draw, with 55 samples, giving a total of 550 samples and an 80-10-10 distribution of the training, testing, and validation samples. 
+You can either do the above process three times, creating samples corresponding to an 80-10-10 percent distribution to create training, test, and validation sets where each of the samples are drawn using Latin hypercube sampling. This ensures an even distribution in parameter space for the three samples. In [Mauland et al. 2023](https://arxiv.org/abs/2309.13295), this corresponded to making one training sample draw with 440 samples, one testing sample draw with 55 samples, and one validation sample draw, with 55 samples, giving a total of 550 samples and an 80-10-10 distribution of the training, testing, and validation samples. 
 - An easier approach is to just make 550 samples directly, and then draw the training, testing, and validation samples randomly afterward, corresponding to an 80-10-10 distribution. 
 
 
@@ -93,7 +93,7 @@ The first thing that needs to be done is to convert the simulation output into t
 
 - The function does the same as for generate_data_z_all.py, but everything is now done individually for the three sets you already made when you made the samples individually. You must change the number of samples in sets_num to fit your distribution, and also the names pointing to folders and files so that they match the structure and naming you made when you made the samples earlier. 
 
-- In the trainingdata folder, there are the lin_separatedLHS_test.csv example files, which match the ones used to train the fully linear $f(R)$ emulator in [Mauland-Hus et al. 2023](#). 
+- In the trainingdata folder, there are the lin_separatedLHS_test.csv example files, which match the ones used to train the fully linear $f(R)$ emulator in [Mauland et al. 2023](https://arxiv.org/abs/2309.13295).
 
 ---------------------------------------------------
 
@@ -109,7 +109,7 @@ Now you start the training by running:
 - python [Emulator.py](neural_network_emulator/Emulator.py)
 
 Output:
-- Ends up in emulators/lightning_logs in a folder named version_x where once you rerun the training with a different architecture a new folder with a higher version number is made, so that you do not overwrite your results. You can see how to use the resulting emulator in the Emulators folder containing the $f(R)$ emulators in [Mauland-Hus et al. 2023](#).
+- Ends up in emulators/lightning_logs in a folder named version_x where once you rerun the training with a different architecture a new folder with a higher version number is made, so that you do not overwrite your results. You can see how to use the resulting emulator in the Emulators folder containing the $f(R)$ emulators in [Mauland et al. 2023](https://arxiv.org/abs/2309.13295).
 
 ---------------------------------------------------
 
@@ -117,12 +117,12 @@ Output:
 
 ---------------------------------------------------
 
-In the folder [FinishedEmulators](../FinishedEmulators) you find the three emulators created in [Mauland-Hus et al. 2023](#).
+In the folder [FinishedEmulators](../FinishedEmulators) you find the three emulators created in [Mauland et al. 2023](https://arxiv.org/abs/2309.13295).
 Here you also find three files demonstrating how to use an emulator and compare its output to data:
 
 - [example_emulator_usage.py](https://github.com/renmau/Sesame_pipeline/blob/main/FinishedEmulators/example_emulator_usage.py): A simple example of how to use the emulator with data.
   
-- [plot_train_test_val_performance.py](https://github.com/renmau/Sesame_pipeline/blob/main/FinishedEmulators/plot_train_test_val_performance.py): Plots the emulator result versus the training, validation, and test data sets used to train it. To use this code, we also provide the data sets used to make the emulator in the unscreened linear $P(k)$ case in [Mauland-Hus et al. 2023](#). To use the data, you must first go to the [trainingdata](https://github.com/renmau/Sesame_pipeline/blob/main/Pipeline/neural_network_emulator/trainingdata) folder and unzip the files.
+- [plot_train_test_val_performance.py](https://github.com/renmau/Sesame_pipeline/blob/main/FinishedEmulators/plot_train_test_val_performance.py): Plots the emulator result versus the training, validation, and test data sets used to train it. To use this code, we also provide the data sets used to make the emulator in the unscreened linear $P(k)$ case in [Mauland et al. 2023](https://arxiv.org/abs/2309.13295). To use the data, you must first go to the [trainingdata](https://github.com/renmau/Sesame_pipeline/blob/main/Pipeline/neural_network_emulator/trainingdata) folder and unzip the files.
   
 - [plot_test_performance_redshifts.py](https://github.com/renmau/Sesame_pipeline/blob/main/FinishedEmulators/plot_test_performance_redshifts.py): Plots the emulator result versus the test set for three different redshifts. The example data provided for this code is the same as for the point above.
 
