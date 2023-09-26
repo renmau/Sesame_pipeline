@@ -52,7 +52,7 @@ Some general tips here:
 
 -----
 
-The [FinishedEmulators](../../FinishedEmulators) folder contains the emulators from [Mauland-Hus et al. 2023](#) and instructions on how to use it and plot the output against the test.csv data.
+The [FinishedEmulators](../../FinishedEmulators) folder contains the emulators from [Mauland et al. 2023](https://arxiv.org/abs/2309.13295) and instructions on how to use it and plot the output against the test.csv data.
 
 -----
 
