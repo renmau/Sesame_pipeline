@@ -1,6 +1,6 @@
 # Completed Emulators
 
-The three emulators created for $f(R)$ gravity which were used as an exmaple in [Mauland-Hus et al. 2023](#) are given in folders:
+The three emulators created for $f(R)$ gravity which were used as an exmaple in [Mauland et al. 2023](https://arxiv.org/abs/2309.13295) are given in folders:
 - [screened_fofr_nonlin_Pk](FinishedEmulators/screened_fofr_nonlin_Pk/version_7/) non-linear $f(R)$ with screening
 - [unscreened_fofr_nonlin_Pk](FinishedEmulators/unscreened_fofr_nonlin_Pk/version_4/) non-linear $f(R)$ without screening
 - [unscreened_fofr_lin_Pk](FinishedEmulators/unscreened_fofr_lin_Pk/version_3/) $f(R)$ using linear theory
@@ -30,5 +30,5 @@ Plots the training, testing, and validation data samples against the emulator pr
 Plots the test data sample against the emulator predictions for three different redshifts for the unscreened linear case.
 
 Comment on the plot code:
-- The data in the .csv files (train, test, val) are here saved in one long continuous data stream, one $k$ and $P(k)$ value after the other. To plot them individually we need to separate them, which is done through a split parameter. In both codes, this is set to split=384. This is the specific length of the $k$-array for the simulations performed in [Mauland-Hus et al. 2023](#). This needs to be swapped out with the length of the array of your own simulations.
+- The data in the .csv files (train, test, val) are here saved in one long continuous data stream, one $k$ and $P(k)$ value after the other. To plot them individually we need to separate them, which is done through a split parameter. In both codes, this is set to split=384. This is the specific length of the $k$-array for the simulations performed in [Mauland et al. 2023](https://arxiv.org/abs/2309.13295). This needs to be swapped out with the length of the array of your own simulations.
 
