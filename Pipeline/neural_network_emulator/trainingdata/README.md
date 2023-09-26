@@ -6,7 +6,7 @@
 
 This folder contains 3 files: train.csv, test.csv, and val.csv containing the data we want to emulate. The data provided here is for the linear emulator.
 
-Unzip the zipped files test.csv.bz2, train.csv.bz2, and val.csv.bz2 to get simulation data for the unscreened f(R) emulator in the linear boost case in [Mauland-Hus et al. 2023](#).
+Unzip the zipped files test.csv.bz2, train.csv.bz2, and val.csv.bz2 to get simulation data for the unscreened f(R) emulator in the linear boost case in [Mauland et al. 2023](https://arxiv.org/abs/2309.13295).
 
 This can be done by:
 bunzip2 test.csv.bz2 train.csv.bz2 val.csv.bz2
